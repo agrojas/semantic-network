@@ -10,10 +10,10 @@ class DbManager:
         self.session_id = None
 
     def connect(self):
-        self.session_id = client.connect(self.user, self.password )
+        self.session_id = self.client.connect(self.user, self.password )
 
     def connect(self, user, password):
-        self.session_id = client.connect(user, password )
+        self.session_id = self.client.connect(user, password )
 
     def checkExists(self,db_name):
         return self.client.db_exists(db_name, pyorient.STORAGE_TYPE_MEMORY)
