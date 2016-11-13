@@ -2,7 +2,7 @@ import pyorient
 client = pyorient.OrientDB("localhost", 2424)  # host, port
 
 ### open a connection (username and password)
-client.connect("root", "root")
+client.connect("root", "root2")
 
 ### create a database
 client.db_create("animals", pyorient.DB_TYPE_GRAPH, pyorient.STORAGE_TYPE_MEMORY)
