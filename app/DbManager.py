@@ -35,5 +35,8 @@ class DbManager:
     def executecommand(self, command):
         self.client.command(command)    
 
+    def getcommand(self, command):
+        return self.client.command(command)    
+
     def executeQuery(self, query):
         self.client.execute(query)
