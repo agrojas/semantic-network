@@ -15,3 +15,9 @@
 ``` 
 bash run.sh
 ```
+
+### Test
+- Ejecutar 
+``` 
+pytest run.sh
+```
